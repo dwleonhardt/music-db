@@ -1,5 +1,5 @@
 exports.seed = function(knex, Promise) {
-  return Promise.join(
+  return Promise.all(
     // Deletes ALL existing entries
     knex('artist').del(),
 

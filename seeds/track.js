@@ -6,11 +6,13 @@ exports.seed = function(knex, Promise) {
     //Inserts seed entries
     knex('track').insert({
       id: 1,
-      name: 'Strawberry Fields'
+      name: 'Strawberry Fields',
+      artist_id: 1
     }),
     knex('track').insert({
       id: 2,
-      name: 'Soft Bulletin'
+      name: 'Soft Bulletin',
+      artist_id: 2
     })
   );
 };
